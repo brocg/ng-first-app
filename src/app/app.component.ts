@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = '';
+  username = '';
+  isUnchanged = false;
+
+  checkUsername(): any {
+    const testButton = document.getElementById('testButton') as HTMLInputElement;
+    if (this.username !== '') {
+      console.warn('username NOT empty. Yay! Enable button.');
+      testButton.disabled = false;
+    } else{
+      console.warn('username is empty. Boo! No button fo you.');
+      testButton.disabled = true;
+    }
+    this.username = 'Hello World';
+  }
+
 }
+
+

@@ -1,9 +1,9 @@
-<div class="container">
+<!-- <div class="container">
 <input class="form-control form-control-lg" type="text" [(ngModel)] = "name">
 <p>{{name}}</p>
-</div>
+</div> -->
 
-<mat-card class="example-card">
+<!-- <mat-card class="example-card">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title>Shiba Inu</mat-card-title>
@@ -21,4 +21,22 @@
     <button mat-button>LIKE</button>
     <button mat-button>SHARE</button>
   </mat-card-actions>
-</mat-card>
+</mat-card> -->
+
+<div class="container">
+  <input class="form-control form-control-lg" type="text" [(ngModel)] = "username">
+  <p>{{username}}</p>
+</div>
+
+<!-- Bind button disabled state to `isUnchanged` property -->
+<div>
+  <h3>Disabled property vs. attribute</h3>
+  <p>Use the inspector to see the Test Button work and its disabled property toggle.</p>
+  <div>
+  <button type="button" id="testButton">Test Button</button>
+  </div>
+  <div>
+  <button type="button" (click)="checkUsername()">Toggle disabled property for Test Button</button>
+</div>
+
+</div>
